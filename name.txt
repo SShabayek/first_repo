@@ -1,3 +1,49 @@
 Sarah Shabayek
 
 My last name is Shabayek
+
+(base) ngs@bioinfo_nu:~$ touch tmp.txt
+(base) ngs@bioinfo_nu:~$ mkdir tmp
+(base) ngs@bioinfo_nu:~$ cd tmp/
+(base) ngs@bioinfo_nu:~/tmp$ touch tmp2.txt
+(base) ngs@bioinfo_nu:~/tmp$ cd
+(base) ngs@bioinfo_nu:~$ git clone https://github.com/SShabayek/first_repo.git
+Cloning into 'first_repo'...
+warning: You appear to have cloned an empty repository.
+(base) ngs@bioinfo_nu:~$ cd first_repo/
+(base) ngs@bioinfo_nu:~/first_repo$ ls
+(base) ngs@bioinfo_nu:~/first_repo$ ll
+total 12
+drwxrwxr-x  3 ngs ngs 4096 Jan 23 17:14 ./
+drwxr-xr-x 14 ngs ngs 4096 Jan 23 17:14 ../
+drwxrwxr-x  7 ngs ngs 4096 Jan 23 17:14 .git/
+(base) ngs@bioinfo_nu:~/first_repo$ touch name.txt
+(base) ngs@bioinfo_nu:~/first_repo$ git add name.txt 
+(base) ngs@bioinfo_nu:~/first_repo$ git commit -m "I typed my name"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'ngs@bioinfo_nu.(none)')
+(base) ngs@bioinfo_nu:~/first_repo$ git config --global user.email "sarah.a.shabayek@gmail.com"
+(base) ngs@bioinfo_nu:~/first_repo$ git config --global user.name "Sarah Shabayek"
+(base) ngs@bioinfo_nu:~/first_repo$ git commit -m "I typed my name"
+[master (root-commit) 251df20] I typed my name
+ 1 file changed, 1 insertion(+)
+ create mode 100644 name.txt
+ base) ngs@bioinfo_nu:~/first_repo$ git push
+Username for 'https://github.com': SShabayek
+Password for 'https://SShabayek@github.com': 
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 233 bytes | 116.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/SShabayek/first_repo.git
+ * [new branch]      master -> master
+ 
